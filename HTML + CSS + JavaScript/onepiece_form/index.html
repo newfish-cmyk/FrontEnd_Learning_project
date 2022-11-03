@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>ONEPIECE Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>ONEPIECE Form</h1>
+    <form action='https://google.com'>
+        <fieldset>
+            <label for="name">Enter Your Name: <input id="name" name="name" type="text" placeholder="Enter Your Name:" required/></label>
+            <label for="email">Enter Your Email: <input id="email" name="email" type="email" placeholder="Enter Your Email:" required/></label>
+            <label for="age">Enter Your Age: <input id="age" name="age" type="number" placeholder="Enter Your Age:" required/></label>
+        </fieldset>
+        <fieldset>
+            <p>Do you like ONEPIECE?</p>
+            <label for="yes"><input id="yes" type="radio" name="q1" class="inline"/>YES!</label>
+            <label for="oyes"><input id="oyes" type="radio" name="q1" class="inline"/>OBVIOUSLY YES!</label>
+            <label for="q2">How did you think of ONEPIECE?
+                <select id="q2" name="q2">
+                  <option value="">(select one)</option>
+                  <option value="1">GREAT!</option>
+                  <option value="2">WONDERFUL!</option>
+                  <option value="3">BRILLIANT!</option>
+                </select>
+            </label>
+            <label for="confirm"><input id="confirm" type="checkbox" name="q3" class="inline"/>I like ONEPIECE!</label>
+        </fieldset>
+        <fieldset>
+            <label for="advice">Give some advices:
+                <textarea id="advice" name="advice"></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+body {
+  background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  padding: 20px;
+}
+
+.menu {
+  background-color: burlywood;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  padding: 20px;
+}
+
+/* 让所有文字居中 */
+h1, h2, p {
+  text-align: center;
+}
+/* 分别设置商品和价格的容器宽度以及其中文字的对齐方式 */
+.goods {
+  text-align: left;
+  width: 75%;
+}
+.price {
+  text-align: right;
+  width: 25%;
+}
+/* 设置一行一个item */
+.item p {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px
+}
+
+hr {
+  height: 2px;
+  background-color: brown;
+  border-color: brown;
+}
+
+a {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: brown;
+}
+a:active {
+  color: brown;
+}
