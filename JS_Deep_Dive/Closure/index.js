@@ -43,8 +43,6 @@ function handleNumber(step) {
         number += step;
         return number;
     }
-    addNumber();
-    console.log('number:', number);
 }
 
 const showNumber = handleNumber(2);
