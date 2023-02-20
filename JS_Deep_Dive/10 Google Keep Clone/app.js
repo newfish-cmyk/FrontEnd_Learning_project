@@ -59,7 +59,6 @@ class App {
       const text = this.$noteText.value;
       const hasNote = title || text;
       if (hasNote) {
-        // add note
         this.addNote({ title, text });
       }
     });
@@ -114,7 +113,7 @@ class App {
     }
   }
 
-  closeModal(event) {
+  closeModal() {
     this.editNote();
     this.$modal.classList.toggle("open-modal");
   }
