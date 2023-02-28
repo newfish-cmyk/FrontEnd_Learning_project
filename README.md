@@ -12,3 +12,15 @@
 
 
 
+### JavaSctipt Basic
+
+接着就可以学习基础的 JavaScript 语法了
+
+这里推荐的网站是 [freecodecamp](https://www.freecodecamp.org/chinese/learn/javascript-algorithms-and-data-structures/#object-oriented-programming)
+
+每学一个知识点都有对应练习，非常适合新手入门或者基础不牢的同学查漏补缺
+
+
+
+### JavaScript Advanced
+
