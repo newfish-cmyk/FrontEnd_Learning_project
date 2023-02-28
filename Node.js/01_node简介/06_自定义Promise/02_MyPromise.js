@@ -54,9 +54,21 @@ const mp = new MyPromise((resolve, reject) => {
     // setTimeout(() => {
     //     resolve("test");
     // }, 1000)
-    resolve("test2")
+    // resolve("test2")
 })
 
 mp.then((result)=>{
     console.log("result",result);
+})
+
+mp.then((result)=>{
+    console.log("result1",result);
+})
+
+mp.then((result)=>{
+    console.log("result2",result);
+})
+
+mp.then((result)=>{
+    console.log("result3",result);
 })
