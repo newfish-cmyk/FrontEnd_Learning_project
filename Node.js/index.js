@@ -91,16 +91,16 @@ fn4();
 //     })
 // }
 
-// function fn5() {
-//     return new Promise(resolve => {
-//         console.log(1);
-//         console.log(2);
-//         resolve();
-//     }).then(r => {
-//         console.log(3);        
-//  })
-// }
+function fn5() {
+    return new Promise(resolve => {
+        console.log(1);
+        console.log(2);
+        resolve();
+    }).then(r => {
+        console.log(3);        
+ })
+}
 
 // fn5();
 
-// console.log(4);
+console.log(4);

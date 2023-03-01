@@ -21,6 +21,28 @@ console.log(result);
         - 文件操作即I/O操作
 */
 
+
+
 const fs = require("node:fs");
 
-fs.readFileSync("./hello.txt")
+fs.readFile(path.resolve(__dirname, "./hello.txt"))
+    .then(buffer => {
+        console.log(buffer.toString());
+    })
+    .catch(e => {
+        console.log("出错了")
+    })
+
+// fs.readFileSync("./hello.txt")
+
+// fs.readFile(
+//     path.resolve(__dirname, "./hello.txt"),
+//     (err, buffer) => {
+//         if (err) {
+//             console.log("出错了");
+//         } else {
+//             console.log(buffer.toString());
+//         }
+//     }
+// )
+
