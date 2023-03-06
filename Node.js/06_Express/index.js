@@ -1,40 +1,29 @@
-/*
-    express 是node中的服务器软件
-        通过express可以快速地在node中搭建一个web服务器
-    - 使用步骤：
-        1、创建并初始化项目
-        2、安装express
-        3、创建index.js
-*/
-
 const express = require("express");
-
-// 获取服务器的实例（对象）
 const app = express();
+const path = require("path");
 
-// 如果希望服务器可以正常访问，则需要为服务器设置路由
-//    路由可以根据不同的请求方式和请求地址来处理用户的请求
+// 创建一个数组来存储用户信息
+const USERS = [
+    {
+        username: "admin",
+        password: "123456"
+    }
+];
 
-/*
-    中间件
-        在express中使用app.use来定义一个中间件
-            中间件作用和路由类似
-            
-*/
+// app.use(express.static(path.resolve(__dirname,public)))
 
-app.get("/", (req, res) => {
-    console.log("访问成功");
-    // 在路由中，要做两件事
-    // 读取用户请求
-    // req 表示的是用户的请求信息，通过 req 可以获取用户传递数据
+// 引入解析请求体的中间件
+// app.use(express.urlencoded());
 
-    // 根据用户请求返回响应
-    // res 表示的服务器发送给可无端的相应信息
-    res.status(200)
-    res.send("heheer");
-})
+// get 查询字符串
 
-// 传入端口号，启动服务器
-app.listen(3000, () => {
-    console.log("服务器启动");
-})
+// 添加一个路由，可以读取get请求的参数
+// hello/:id 表示当用户访问 /hello/xxx 时就会被触发
+
+// app.post("/login", (req, res) => {
+//     // 通过 req.body 来获取post请求的参数（请求体中的参数）
+//     // 默认情况下express不会自动解析请求体，需要通过中间件来为其增加功能
+//     console.log(req.body);
+//     res.send("<h1>post请求已经收到</h1>")
+// })
+
