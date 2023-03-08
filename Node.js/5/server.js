@@ -4,7 +4,7 @@ const router = require("koa-router")();
 const nunjucks = require("nunjucks");
 const session = require("koa-session");
 const app = new Koa();
-app.keys = ["123456"]
+app.keys = ["123456"];
 app.use(session({
     maxAge: 30000
 }, app));
