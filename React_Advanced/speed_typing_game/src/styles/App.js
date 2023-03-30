@@ -1,5 +1,5 @@
 import React from "react"
-import useWordGame from "./useWordGame"
+import useWordGame from "../useWordGame"
 
 export default function App() {
   const {
